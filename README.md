@@ -1,2 +1,2 @@
-# Vanilla-vite-template
+# Project STP-8614
 
