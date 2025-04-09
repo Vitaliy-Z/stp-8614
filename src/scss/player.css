@@ -14,3 +14,36 @@
 
   color: #fff;
 }
+
+.player-subtitle {
+  padding: 4.5px 39px 4.5px 39px;
+  margin: 16px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 150%;
+  text-transform: capitalize;
+  color: #fff;
+}
+
+.player-list-item {
+  display: flex;
+  gap: 60px;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 32px;
+}
+
+.player-list-item.first-item {
+  flex-direction: column-reverse;
+  align-items: center;
+}
+
+.player-item-avatar {
+  margin-bottom: 32px;
+}
+
+.player-item-name {
+  font-weight: 700;
+  font-size: 36px;
+  text-align: center;
+}
