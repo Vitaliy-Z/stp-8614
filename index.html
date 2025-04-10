@@ -26,7 +26,7 @@
 
     
     <script type="module" crossorigin src="/stp-8614/commonHelpers2.js"></script>
-    <link rel="stylesheet" href="/stp-8614/assets/index-b797abc6.css">
+    <link rel="stylesheet" href="/stp-8614/assets/index-5436b639.css">
   </head>
   <body>
     <header class="header">
@@ -74,7 +74,7 @@
     </nav>
 
     <!-- Mobile -->
-    <button class="mob-menu-btn js-mob-menu-btn">
+    <button class="mob-menu-btn js-mob-menu-btn" type="button">
       <svg class="header-icon-burger">
         <use href="/stp-8614/assets/sprite-e4830346.svg#icon-burger"></use>
       </svg>
@@ -82,7 +82,7 @@
 
     <div class="header-mob-menu js-header-mob-menu">
       <nav class="header-mob-nav">
-        <button class="mob-menu-btn js-mob-menu-btn">
+        <button class="mob-menu-btn js-mob-menu-btn" type="button">
           <svg class="header-icon-burger">
             <use href="/stp-8614/assets/sprite-e4830346.svg#icon-close"></use>
           </svg>
@@ -132,6 +132,40 @@
     </div>
   </div>
 </header>
+
+    <section class="hero-section">
+  <div class="container">
+    <h1 class="hero-title">
+      <span class="hero-title-one">Jewel</span>
+      <span class="hero-title-two">Royal</span>
+      <span class="hero-title-three">Garden:</span>
+      <span class="hero-title-image"></span>
+    </h1>
+    <div class="hero-images-wrapper">
+      <div class="hero-left-items"></div>
+      <img
+        class="hero-mobile-img"
+        srcset="/stp-8614/assets/mobile2x-2f58803f.png 2x"
+        src="/stp-8614/assets/mobile1x-15e730f2.png"
+        alt="Mobile image"
+      />
+      <div class="hero-right-items"></div>
+    </div>
+    <a
+      class="hero-link-googleplay"
+      href="https://play.google.com/store/apps/details?id=com.actionfit.royalgarden&hl=en&gl=us "
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <img
+        class="hero-link-googleplay-img"
+        srcset="/stp-8614/assets/googleplay2x-a9c6b942.png 2x"
+        src="data:image/png;base64,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"
+        alt="Mobile image"
+      />
+    </a>
+  </div>
+</section>
 
 
     
