@@ -11,17 +11,16 @@
 .player-title {
   font-weight: 700;
   font-size: 28px;
-
+  text-align: center;
   color: #fff;
 }
 
 .player-subtitle {
-  padding: 4.5px 39px 4.5px 39px;
-  margin: 16px;
+  margin: 0 50px 0 50px;
   font-weight: 500;
   font-size: 20px;
-  line-height: 150%;
   text-transform: capitalize;
+  text-align: center;
   color: #fff;
 }
 
