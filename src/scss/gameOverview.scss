@@ -1,0 +1,121 @@
+.gameOverview-section .container {
+  padding: 0 23px;
+
+  @include media(desktop) {
+    padding: 0 120px;
+  }
+}
+
+.gameOverview-title {
+  margin-bottom: 16px;
+  text-align: center;
+  color: #fff;
+
+  text-shadow: -3px 0 #8650d8, -3px -3px #8650d8, 0 -3px #8650d8,
+    3px 3px #8650d8, 0 3px #8650d8, 3px 0 #8650d8, -3px 3px #8650d8,
+    3px -3px #8650d8;
+
+  @include font(28, 50);
+  font-weight: 700;
+
+  @include media(desktop) {
+    text-align: start;
+    font-size: 64px;
+  }
+}
+
+.gameOverview-subtitle {
+  margin: 0 auto 43px auto;
+  max-width: 217px;
+  text-align: center;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+
+  @include media(desktop) {
+    max-width: 100%;
+    text-align: start;
+    font-size: 40px;
+  }
+}
+
+.gameOverview-list {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+
+  @include media(desktop) {
+    flex-direction: row;
+    gap: 82px;
+  }
+}
+
+.gameOverview-item {
+  position: relative;
+  padding: 35px 0 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  border-radius: 10px;
+
+  &::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    box-shadow: #fff 0px 0px 20px 15px inset, #fff 0px 0px 20px 15px;
+  }
+
+  @include media(desktop) {
+    padding: 0;
+    width: calc((100% - 3 * 82px) / 4);
+    &::before {
+      content: none;
+    }
+  }
+}
+
+.gameOverview-image {
+  @include media(desktop) {
+    width: 100%;
+  }
+}
+
+.gameOverview-text {
+  text-align: center;
+  color: #fff;
+  font-size: 32px;
+  font-weight: 500;
+  text-shadow: -1px 0 #6780fd, -1px -1px #6780fd, 0 -1px #6780fd,
+    1px 1px #6780fd, 0 1px #6780fd, 1px 0 #6780fd, -1px 1px #6780fd,
+    1px -1px #6780fd;
+
+  @include media(desktop) {
+    padding-left: 12px;
+    text-align: start;
+    text-shadow: none;
+  }
+}
+
+.gameOverview-item:nth-child(3) .gameOverview-text {
+  @include media(desktop) {
+    font-size: 24px;
+  }
+}
+
+.gameOverview-description {
+  width: 75%;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
+
+  @include media(desktop) {
+    padding-left: 12px;
+    text-align: start;
+    width: 100%;
+  }
+}
