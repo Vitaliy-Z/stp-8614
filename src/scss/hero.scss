@@ -1,5 +1,6 @@
 .hero-section {
   overflow: hidden;
+  padding-bottom: 22px;
 
   @include media(desktop) {
     padding: 60px 0 106px;
@@ -106,7 +107,7 @@
     url('/img/hero/mob-mobile1x.png');
   background-repeat: no-repeat;
   background-position: 8px 14px, 105px 80px;
-  background-size: 95%, 37%;
+  background-size: 98%, 37%;
 
   @media (min-resolution: 192dpi) {
     background-image: url('/img/hero/mob-items2x.png'),
