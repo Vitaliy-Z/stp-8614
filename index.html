@@ -26,7 +26,7 @@
 
     
     <script type="module" crossorigin src="/stp-8614/commonHelpers2.js"></script>
-    <link rel="stylesheet" href="/stp-8614/assets/index-f09d8dd5.css">
+    <link rel="stylesheet" href="/stp-8614/assets/index-fb24b54a.css">
   </head>
   <body>
     <header class="header">
@@ -238,7 +238,64 @@
   </div>
 </section>
 
-    <!-- <section class="section-player">
+    <section class="teams-section">
+  <div class="container">
+    <h2 class="section-title">Dev Team Avatars</h2>
+    <h3 class="section-subtitle">
+      Get a glimpse into how the game was brought to life!
+    </h3>
+    <ul class="teams-list">
+      <li class="teams-item teams-item-1">
+        <img
+          class="teams-avatar"
+          srcset="/stp-8614/assets/alyra@2x-26c5c7a4.png 2x"
+          src="/stp-8614/assets/alyra@1x-11d65df3.png"
+          alt="Alyra avatar"
+        />
+        <div class="teams-item-description">
+          <h4 class="teams-name">Alyra</h4>
+          <p class="teams-position">Product Manager</p>
+          <p class="teams-booster">
+            Favorite Booster:<span class="teams-booster-name">Hammer</span>
+          </p>
+        </div>
+      </li>
+      <li class="teams-item teams-item-2">
+        <img
+          class="teams-avatar"
+          srcset="/stp-8614/assets/ruby@2x-f91f3213.png 2x"
+          src="/stp-8614/assets/ruby@1x-12e64838.png"
+          alt="Ruby avatar"
+        />
+        <div class="teams-item-description">
+          <h4 class="teams-name">Ruby</h4>
+          <p class="teams-position">Level Artist</p>
+          <p class="teams-booster">
+            Favorite Booster:<span class="teams-booster-name">Bomb</span>
+          </p>
+        </div>
+      </li>
+      <li class="teams-item teams-item-3">
+        <img
+          class="teams-avatar"
+          srcset="/stp-8614/assets/emerald@2x-3aadb0f7.png 2x"
+          src="/stp-8614/assets/emerald@1x-f1494456.png"
+          alt="Emerald avatar"
+        />
+        <div class="teams-item-description">
+          <h4 class="teams-name">Emerald</h4>
+          <p class="teams-position">Front Developer</p>
+          <p class="teams-booster">
+            Favorite Booster:<span class="teams-booster-name">Rocket</span>
+          </p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+
+    <section class="section-player">
   <div class="section-container container">
     <h2 class="player-title">Player Hall Of Fame</h2>
     <h3 class="player-subtitle">
@@ -249,15 +306,15 @@
         <div class="player-list-item-wrapper">
           <img
             class="player-item-avatar"
-            srcset="/img/player/bob2x.png 2x"
-            src="/img/player/bob1x.png"
+            srcset="/stp-8614/assets/bob2x-a1b92d7e.png 2x"
+            src="/stp-8614/assets/bob1x-497ab235.png"
             alt="image Bob"
           />
           <p class="player-item-name">Bob</p>
         </div>
         <img
-          srcset="/img/player/golden_cup2x.png 2x"
-          src="/img/player/golden_cup1x.png"
+          srcset="/stp-8614/assets/golden_cup2x-a705978e.png 2x"
+          src="/stp-8614/assets/golden_cup1x-21df4cbe.png"
           alt="image golden cup"
         />
       </li>
@@ -265,15 +322,15 @@
         <div class="player-list-item-wrapper">
           <img
             class="player-item-avatar"
-            srcset="/img/player/roby2x.png 2x"
-            src="/img/player/roby1x.png"
+            srcset="/stp-8614/assets/roby2x-beace0d7.png 2x"
+            src="/stp-8614/assets/roby1x-20d90b84.png"
             alt="image Roby"
           />
           <p>Roby</p>
         </div>
         <img
-          srcset="/img/player/silver_cup2x.png 2x"
-          src="/img/player/silver_cup1x.png"
+          srcset="/stp-8614/assets/silver_cup2x-194003b4.png 2x"
+          src="data:image/png;base64,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"
           alt="image silver cup"
         />
       </li>
@@ -281,22 +338,22 @@
         <div class="player-list-item-wrapper">
           <img
             class="player-item-avatar"
-            srcset="/img/player/steve2x.png 2x"
-            src="/img/player/steve1x.png"
+            srcset="/stp-8614/assets/steve2x-4e08c039.png 2x"
+            src="/stp-8614/assets/steve1x-63680bf6.png"
             alt="image steve"
           />
           <p>Steve</p>
         </div>
         <img
-          srcset="/img/player/bronze_cup2x.png 2x"
-          src="/img/player/bronze_cup1x.png"
+          srcset="/stp-8614/assets/bronze_cup2x-fbb5a1a9.png 2x"
+          src="data:image/png;base64,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"
           alt="image bronze cup"
         />
       </li>
     </ul>
   </div>
 </section>
- -->
+
     <!-- <section class="section-hidden">
   <div class="section-container container">
     <h2 class="hidden-title">Hidden Secrets</h2>
