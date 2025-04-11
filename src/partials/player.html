@@ -1,11 +1,18 @@
 <section class="section-player">
-  <div class="section-container container">
-    <h2 class="player-title">Player Hall Of Fame</h2>
-    <h3 class="player-subtitle">
+  <div class="container">
+    <h2 class="section-title">Player Hall Of Fame</h2>
+    <h3 class="section-subtitle">
       Celebrate the top players of jewel royal garden!
     </h3>
     <ul class="player-list">
       <li class="player-list-item first-item">
+        <p class="player-item-text first">Diamond League</p>
+        <img
+          class="player-item-cup"
+          srcset="/img/player/golden_cup2x.png 2x"
+          src="/img/player/golden_cup1x.png"
+          alt="image golden cup"
+        />
         <div class="player-list-item-wrapper">
           <img
             class="player-item-avatar"
@@ -15,43 +22,60 @@
           />
           <p class="player-item-name">Bob</p>
         </div>
-        <img
-          srcset="/img/player/golden_cup2x.png 2x"
-          src="/img/player/golden_cup1x.png"
-          alt="image golden cup"
-        />
       </li>
       <li class="player-list-item">
-        <div class="player-list-item-wrapper">
-          <img
-            class="player-item-avatar"
-            srcset="/img/player/roby2x.png 2x"
-            src="/img/player/roby1x.png"
-            alt="image Roby"
-          />
-          <p>Roby</p>
-        </div>
+        <p class="player-item-text second">Emerald League</p>
         <img
+          class="player-item-cup"
           srcset="/img/player/silver_cup2x.png 2x"
           src="/img/player/silver_cup1x.png"
           alt="image silver cup"
         />
+        <div class="player-list-item-wrapper">
+          <picture>
+            <source
+              srcset="
+                /img/player/desktop-roby@1x.png 1x,
+                /img/player/desktop-roby@2x.png 2x
+              "
+              media="(min-width: 1200px)"
+            />
+            <img
+              class="player-item-avatar"
+              srcset="/img/player/roby2x.png 2x"
+              src="/img/player/roby1x.png"
+              alt="image Steve"
+            />
+          </picture>
+          <p class="player-item-name">Roby</p>
+        </div>
       </li>
       <li class="player-list-item">
-        <div class="player-list-item-wrapper">
-          <img
-            class="player-item-avatar"
-            srcset="/img/player/steve2x.png 2x"
-            src="/img/player/steve1x.png"
-            alt="image steve"
-          />
-          <p>Steve</p>
-        </div>
+        <p class="player-item-text three">Ruby League</p>
         <img
+          class="player-item-cup"
           srcset="/img/player/bronze_cup2x.png 2x"
           src="/img/player/bronze_cup1x.png"
           alt="image bronze cup"
         />
+        <div class="player-list-item-wrapper">
+          <picture>
+            <source
+              srcset="
+                /img/player/desktop-steve@1x.png 1x,
+                /img/player/desktop-steve@2x.png 2x
+              "
+              media="(min-width: 1200px)"
+            />
+            <img
+              class="player-item-avatar"
+              srcset="/img/player/steve2x.png 2x"
+              src="/img/player/steve1x.png"
+              alt="image Steve"
+            />
+          </picture>
+          <p class="player-item-name">Steve</p>
+        </div>
       </li>
     </ul>
   </div>
