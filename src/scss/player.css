@@ -2,10 +2,8 @@
   padding: 32px 0 22px 0;
 }
 
-.container {
+.section-container .container {
   padding: 0 13.5px 0 13.5px;
-  width: 320px;
-  margin: 0 auto;
 }
 
 .player-title {
@@ -16,7 +14,7 @@
 }
 
 .player-subtitle {
-  margin: 0 50px 0 50px;
+  margin: 0 50px 62px 50px;
   font-weight: 500;
   font-size: 20px;
   text-transform: capitalize;
@@ -29,7 +27,6 @@
   gap: 60px;
   align-items: flex-start;
   justify-content: center;
-  margin: 32px;
 }
 
 .player-list-item.first-item {
@@ -42,6 +39,7 @@
 }
 
 .player-item-name {
+  margin-bottom: 32px;
   font-weight: 700;
   font-size: 36px;
   text-align: center;
