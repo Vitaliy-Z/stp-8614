@@ -45,6 +45,7 @@ section {
   font-weight: 700;
 
   @include media(desktop) {
+    text-transform: capitalize;
     text-align: start;
     font-size: 40px;
   }
