@@ -1,3 +1,17 @@
+.section-player {
+  @include media(desktop) {
+    padding-bottom: 80px;
+    background-image: url('/img/player/destop-bg@1x.png');
+    background-repeat: no-repeat;
+    background-position: 85% 103%;
+    background-size: 20%;
+
+    @media (min-resolution: 192dpi) {
+      background-image: url('/img/player/destop-bg@2x.png');
+    }
+  }
+}
+
 .section-player .section-subtitle {
   text-transform: capitalize;
   width: 217px;
