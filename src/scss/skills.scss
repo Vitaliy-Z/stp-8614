@@ -1,0 +1,35 @@
+.skills-section .container {
+  padding-bottom: 120px;
+
+  background-image: url('/img/skills/mob-bg-img@1x.png');
+  background-repeat: no-repeat;
+  background-position: 50% 90%;
+  background-size: 70%;
+
+  @media (min-resolution: 192dpi) {
+    background-image: url('/img/skills/mob-bg-img@2x.png');
+  }
+
+  @include media(desktop) {
+    background-image: none;
+  }
+}
+
+.skills-section .section-title {
+  margin: 0 auto;
+  width: 80%;
+  text-align: left;
+  font-size: 20px;
+  font-weight: 500;
+
+  text-shadow: -2px 0px #697cfa, 2px 0 #697cfa, 0px -2px #697cfa, 0 2px #697cfa,
+    2px 2px #697cfa, -2px -2px #697cfa, -2px 2px #697cfa, 2px -2px #697cfa;
+
+  @include media(desktop) {
+    margin-left: 0;
+    font-size: 40px;
+    text-shadow: -3px 0px #7b63e6, 3px 0 #7b63e6, 0px -3px #7b63e6,
+      0 3px #7b63e6, 3px 3px #7b63e6, -3px -3px #7b63e6, -3px 3px #7b63e6,
+      3px -3px #7b63e6;
+  }
+}
