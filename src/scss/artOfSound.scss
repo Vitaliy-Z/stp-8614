@@ -1,0 +1,37 @@
+.artOfSound-section .section-subtitle {
+  width: 250px;
+
+  @include media(desktop) {
+    margin-left: 0;
+    width: 80%;
+  }
+}
+.artOfSound-section .container {
+  padding-bottom: 400px;
+
+  background-image: url('/img/artOfSound/mob-notes@1x.png'),
+    url('/img/artOfSound/mobile@1x.png');
+  background-repeat: no-repeat;
+  background-position: 100% 35%, 40% 95%;
+  background-size: 37%, 80%;
+
+  @media (min-resolution: 192dpi) {
+    background-image: url('/img/artOfSound/mob-notes@2x.png'),
+      url('/img/artOfSound/mobile@2x.png');
+  }
+
+  @include media(desktop) {
+    padding-bottom: 850px;
+
+    background-image: url('/img/artOfSound/desktop-notes@1x.png'),
+      url('/img/artOfSound/mobile@1x.png');
+    background-repeat: no-repeat;
+    background-position: 88% 35%, 25% 90%;
+    background-size: 30%, 50%;
+
+    @media (min-resolution: 192dpi) {
+      background-image: url('/img/artOfSound/desktop-notes@2x.png'),
+        url('/img/artOfSound/mobile@2x.png');
+    }
+  }
+}
