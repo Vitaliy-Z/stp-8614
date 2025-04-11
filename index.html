@@ -26,7 +26,7 @@
 
     
     <script type="module" crossorigin src="/stp-8614/commonHelpers2.js"></script>
-    <link rel="stylesheet" href="/stp-8614/assets/index-ad4cc7fc.css">
+    <link rel="stylesheet" href="/stp-8614/assets/index-7256975f.css">
   </head>
   <body>
     <header class="header">
@@ -160,8 +160,8 @@
 
     <section class="gameOverview-section">
   <div class="container">
-    <h2 class="gameOverview-title">Game Overview</h2>
-    <h3 class="gameOverview-subtitle">
+    <h2 class="section-title">Game Overview</h2>
+    <h3 class="section-subtitle">
       Do you have what it takes to 2 the jewel master?
     </h3>
     <ul class="gameOverview-list">
@@ -217,7 +217,28 @@
   </div>
 </section>
 
-    <section class="section-player">
+    <section class="features-section">
+  <div class="container">
+    <h2 class="section-title">Features</h2>
+    <h3 class="section-subtitle">How To Play - It’s Easy & Fun!</h3>
+    <ul class="features-list">
+      <li class="features-item item-one">
+        <p class="features-item-number"><span>1</span></p>
+        <p class="features-item-text">Swipe 3 in a row</p>
+      </li>
+      <li class="features-item item-two">
+        <p class="features-item-number"><span>2</span></p>
+        <p class="features-item-text">Create Match</p>
+      </li>
+      <li class="features-item item-three">
+        <p class="features-item-number"><span>3</span></p>
+        <p class="features-item-text">Get Your Bonus Goals</p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+    <!-- <section class="section-player">
   <div class="section-container container">
     <h2 class="player-title">Player Hall Of Fame</h2>
     <h3 class="player-subtitle">
@@ -228,15 +249,15 @@
         <div class="player-list-item-wrapper">
           <img
             class="player-item-avatar"
-            srcset="/stp-8614/assets/bob2x-a1b92d7e.png 2x"
-            src="/stp-8614/assets/bob1x-497ab235.png"
+            srcset="/img/player/bob2x.png 2x"
+            src="/img/player/bob1x.png"
             alt="image Bob"
           />
           <p class="player-item-name">Bob</p>
         </div>
         <img
-          srcset="/stp-8614/assets/golden_cup2x-a705978e.png 2x"
-          src="/stp-8614/assets/golden_cup1x-21df4cbe.png"
+          srcset="/img/player/golden_cup2x.png 2x"
+          src="/img/player/golden_cup1x.png"
           alt="image golden cup"
         />
       </li>
@@ -244,15 +265,15 @@
         <div class="player-list-item-wrapper">
           <img
             class="player-item-avatar"
-            srcset="/stp-8614/assets/roby2x-beace0d7.png 2x"
-            src="/stp-8614/assets/roby1x-20d90b84.png"
+            srcset="/img/player/roby2x.png 2x"
+            src="/img/player/roby1x.png"
             alt="image Roby"
           />
           <p>Roby</p>
         </div>
         <img
-          srcset="/stp-8614/assets/silver_cup2x-194003b4.png 2x"
-          src="data:image/png;base64,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"
+          srcset="/img/player/silver_cup2x.png 2x"
+          src="/img/player/silver_cup1x.png"
           alt="image silver cup"
         />
       </li>
@@ -260,23 +281,23 @@
         <div class="player-list-item-wrapper">
           <img
             class="player-item-avatar"
-            srcset="/stp-8614/assets/steve2x-4e08c039.png 2x"
-            src="/stp-8614/assets/steve1x-63680bf6.png"
+            srcset="/img/player/steve2x.png 2x"
+            src="/img/player/steve1x.png"
             alt="image steve"
           />
           <p>Steve</p>
         </div>
         <img
-          srcset="/stp-8614/assets/bronze_cup2x-fbb5a1a9.png 2x"
-          src="data:image/png;base64,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"
+          srcset="/img/player/bronze_cup2x.png 2x"
+          src="/img/player/bronze_cup1x.png"
           alt="image bronze cup"
         />
       </li>
     </ul>
   </div>
 </section>
-
-    <section class="section-hidden">
+ -->
+    <!-- <section class="section-hidden">
   <div class="section-container container">
     <h2 class="hidden-title">Hidden Secrets</h2>
     <h3 class="hidden-subtitle">
@@ -295,8 +316,8 @@
     </div>
   </div>
 </section> 
-
-    <section class="section-speedrun">
+ -->
+    <!-- <section class="section-speedrun">
     <div class="section-container container">
       <h2 class="speedrun-title">Speedrun Challenges</h2>
       <h3 class="speedrun-subtitle">
@@ -322,28 +343,28 @@
         />
       </div>
     </div>
-  </section> 
-    <section class="section-skills">
+  </section>  -->
+    <!-- <section class="section-skills">
     <div class="section-container container">
       <h2 class="skills-title">Sharpen your skills and prove you’re the fastest gem matcher!</h2>
         <div class="skills-images-wrapper"></div>
       </div>
     </div>
-  </section> 
-    
+  </section>  -->
+    <!-- 
 <footer class="footer">
   <a href="../index.html" class="footer-logo">
     <div class="footer-container container">
         <picture
         ><source
-          srcset="data:image/png;base64,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 1x, /stp-8614/assets/logo2x-cd2f4521.png 2x"
+          srcset="/img/logo/logo1x.png 1x, /img/logo/logo2x.png 2x"
 
           media="(min-width: 1200px)"
           width="129"
           height="129"
         />
         <source
-          srcset="data:image/png;base64,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 1x, /stp-8614/assets/logo2x-cd2f4521.png 2x"
+          srcset="/img/logo/logo1x.png 1x, /img/logo/logo2x.png 2x"
           media="(min-width: 320px)"
           width="42"
           height="42"
@@ -369,7 +390,7 @@
   </p>
 </div>
 </footer>
-
+ -->
 
     
   </body>
