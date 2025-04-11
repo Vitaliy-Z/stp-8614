@@ -1,23 +1,32 @@
 .hero-section {
   overflow: hidden;
+  padding-bottom: 22px;
 
   @include media(desktop) {
-    padding: 80px 0 106px;
+    padding: 60px 0 106px;
   }
 }
 
 .hero-section .container {
+  overflow: visible;
   text-align: center;
 
   @include media(desktop) {
-    position: relative;
-    display: flex;
-    gap: 110px;
+    height: 702px;
+    background-image: url('/img/hero/desktop-items1x.png'),
+      url('/img/hero/desktop-mobile1x.png');
+    background-repeat: no-repeat;
+    background-position: 0px 215px, 720px 0px;
+    background-size: 600px, 370px;
+
+    @media (min-resolution: 192dpi) {
+      background-image: url('/img/hero/desktop-items2x.png'),
+        url('/img/hero/desktop-mobile2x.png');
+    }
   }
 }
 
 .hero-title {
-  margin-bottom: 78px;
   font-family: 'Bungee', sans-serif;
   font-weight: 400;
   font-size: 36px;
@@ -32,6 +41,7 @@
     line-height: 0.9;
     font-size: 80px;
     align-items: flex-start;
+    transform: translateY(40px);
   }
 }
 
@@ -75,11 +85,11 @@
 
   @include media(desktop) {
     position: absolute;
-    top: -22px;
-    left: 435px;
+    top: -20px;
+    left: 440px;
     display: block;
-    width: 134px;
-    height: 191px;
+    width: 115px;
+    height: 190px;
     background-image: url('/img/hero/heading-image1x.png');
     background-repeat: no-repeat;
     background-size: cover;
@@ -91,73 +101,18 @@
 }
 
 .hero-images-wrapper {
-  position: relative;
-
-  @include media(desktop) {
-    position: static;
-  }
-}
-
-.hero-left-items {
-  position: absolute;
-  top: -46px;
-  width: 134px;
-  height: 191px;
-  background-image: url('/img/hero/mob-left-items1x.png');
+  width: 120%;
+  height: 315px;
+  background-image: url('/img/hero/mob-items1x.png'),
+    url('/img/hero/mob-mobile1x.png');
   background-repeat: no-repeat;
-  background-size: cover;
+  background-position: 8px 14px, 105px 80px;
+  background-size: 98%, 37%;
 
   @media (min-resolution: 192dpi) {
-    background-image: url('/img/hero/mob-left-items2x.png');
+    background-image: url('/img/hero/mob-items2x.png'),
+      url('/img/hero/mob-mobile2x.png');
   }
-
-  @include media(desktop) {
-    left: 0;
-    top: 215px;
-    width: 607px;
-    height: 428px;
-    background-image: url('/img/hero/desktop-left-items1x.png');
-
-    @media (min-resolution: 192dpi) {
-      background-image: url('/img/hero/desktop-left-items2x.png');
-    }
-  }
-}
-
-.hero-mobile-img {
-  margin: 0 auto;
-  margin-bottom: 22px;
-  width: 128px;
-
-  transform: translateX(25px);
-  transition: transform 550ms ease-in-out;
-
-  @include media(desktop) {
-    transform: translateX(0);
-    margin-top: -11px;
-    width: 386px;
-  }
-}
-
-.hero-mobile-img:hover {
-  transform: translateX(25px) rotateY(40deg) rotateY(-45deg) rotateZ(-10deg)
-    scale(1.1) skewY(5deg);
-}
-
-.hero-right-items {
-  position: absolute;
-  top: -57px;
-  right: -55px;
-  width: 115px;
-  height: 333px;
-  background-image: url('/img/hero/mob-right-items1x.png');
-  background-repeat: no-repeat;
-  background-size: cover;
-
-  @media (min-resolution: 192dpi) {
-    background-image: url('/img/hero/mob-right-items2x.png');
-  }
-
   @include media(desktop) {
     display: none;
   }
