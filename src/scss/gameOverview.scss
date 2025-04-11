@@ -6,36 +6,10 @@
   }
 }
 
-.gameOverview-title {
-  margin-bottom: 16px;
-  text-align: center;
-  color: #fff;
-
-  text-shadow: -3px 0 #8650d8, -3px -3px #8650d8, 0 -3px #8650d8,
-    3px 3px #8650d8, 0 3px #8650d8, 3px 0 #8650d8, -3px 3px #8650d8,
-    3px -3px #8650d8;
-
-  @include font(28, 50);
-  font-weight: 700;
-
-  @include media(desktop) {
-    text-align: start;
-    font-size: 64px;
-  }
-}
-
-.gameOverview-subtitle {
-  margin: 0 auto 43px auto;
+.gameOverview-section .section-subtitle {
   max-width: 217px;
-  text-align: center;
-  color: #fff;
-  font-size: 20px;
-  font-weight: 700;
-
   @include media(desktop) {
     max-width: 100%;
-    text-align: start;
-    font-size: 40px;
   }
 }
 
