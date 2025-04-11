@@ -1,0 +1,160 @@
+.teams-section .section-subtitle {
+  width: 230px;
+  @include media(desktop) {
+    text-transform: capitalize;
+    width: 80%;
+    margin-left: 0;
+  }
+}
+
+.teams-list {
+  padding: 0 16px;
+  display: flex;
+  flex-direction: column;
+  @include media(desktop) {
+    padding: 0;
+  }
+}
+
+.teams-item {
+  position: relative;
+  margin-bottom: 266px;
+  display: flex;
+  align-items: center;
+  gap: 22px;
+
+  @include media(desktop) {
+    color: #000;
+    margin-bottom: 192px;
+    align-items: flex-start;
+    gap: 106px;
+  }
+}
+
+.teams-item-1::after {
+  content: '';
+  position: absolute;
+  padding: 32px;
+  width: 178px;
+  height: 170px;
+  top: 150%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 25px;
+  box-shadow: #ffffffbb 0px 0px 20px 15px inset, #ffffffbb 0px 0px 20px 15px;
+
+  background-image: url('/img/teams/alyra-skil@1x.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 70%;
+
+  @media (min-resolution: 192dpi) {
+    background-image: url('/img/teams/alyra-skil@2x.png');
+  }
+
+  @include media(desktop) {
+    width: 201px;
+    height: 194px;
+    top: 65%;
+    left: 63%;
+  }
+}
+
+.teams-item-2::after {
+  content: '';
+  position: absolute;
+  padding: 32px;
+  width: 178px;
+  height: 170px;
+  top: 150%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 25px;
+  box-shadow: #ffffffbb 0px 0px 20px 15px inset, #ffffffbb 0px 0px 20px 15px;
+
+  background-image: url('/img/teams/ruby-skil@1x.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 70%;
+
+  @media (min-resolution: 192dpi) {
+    background-image: url('/img/teams/ruby-skil@2x.png');
+  }
+
+  @include media(desktop) {
+    width: 201px;
+    height: 194px;
+    top: 65%;
+    left: 63%;
+  }
+}
+
+.teams-item-3::after {
+  content: '';
+  position: absolute;
+  padding: 32px;
+  width: 178px;
+  height: 170px;
+  top: 150%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 25px;
+  box-shadow: #ffffffbb 0px 0px 20px 15px inset, #ffffffbb 0px 0px 20px 15px;
+
+  background-image: url('/img/teams/emerald-skil@1x.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 70%;
+
+  @media (min-resolution: 192dpi) {
+    background-image: url('/img/teams/emerald-skil@2x.png');
+  }
+
+  @include media(desktop) {
+    width: 201px;
+    height: 194px;
+    top: 65%;
+    left: 63%;
+  }
+}
+
+.teams-avatar {
+  @include media(desktop) {
+    width: 248px;
+  }
+}
+
+.teams-item-description {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.teams-name {
+  color: #000;
+  font-size: 20px;
+  font-weight: 700;
+
+  @include media(desktop) {
+    font-size: 40px;
+  }
+}
+
+.teams-position,
+.teams-booster {
+  font-size: 16px;
+  font-weight: 500;
+  @include media(desktop) {
+    font-size: 20px;
+    font-weight: 700;
+  }
+}
+
+.teams-booster-name {
+  display: inline-block;
+  font-size: 20px;
+  @include media(desktop) {
+    margin-left: 50px;
+    font-size: 32px;
+  }
+}
