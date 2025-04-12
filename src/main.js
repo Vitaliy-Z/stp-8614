@@ -14,6 +14,7 @@ const toggleMobMenu = () => {
 
 const closeCookieModal = () => {
   cookieModal.classList.remove('is-show');
+  cookiesBtn.forEach(btn => btn.removeEventListener('click', closeCookieModal));
 };
 
 document.addEventListener('DOMContentLoaded', () => {
