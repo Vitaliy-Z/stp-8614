@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+@import './common/common.scss';
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-image: url('/img/background/background2x.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  @media (min-resolution: 192dpi) {
+    background-image: url('/img/background/background2x.png');
+  }
+}
+
+.section-title {
+  margin-bottom: 16px;
+  text-align: center;
+  color: #fff;
+  text-transform: capitalize;
+
+  text-shadow: -2px 0px #8650d8, 2px 0 #8650d8, 0px -2px #8650d8, 0 2px #8650d8,
+    2px 2px #8650d8, -2px -2px #8650d8, -2px 2px #8650d8, 2px -2px #8650d8;
+
+  font-size: 28px;
+  font-weight: 700;
+
+  @include media(desktop) {
+    text-align: start;
+    font-size: 64px;
+  }
+}
+.section-subtitle {
+  margin: 0 auto 45px auto;
+  text-align: center;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+
+  @include media(desktop) {
+    text-transform: capitalize;
+    margin-left: 0;
+    text-align: start;
+    font-size: 40px;
+  }
+}
+
+@import './home/header.scss';
+@import './home/hero.scss';
+@import './home/gameOverview.scss';
+@import './home/features.scss';
+@import './home/teams.scss';
+@import './home/artOfSound.scss';
+@import './home/player.scss';
+@import './home/secrets.scss';
+@import './home/challenges.scss';
+@import './home/skills.scss';
+@import './home/footer.scss';
+@import './home/cookies-modal.scss';
