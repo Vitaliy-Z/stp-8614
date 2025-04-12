@@ -1,55 +1,8 @@
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  background-image: url('/img/background/background2x.png');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-
-  @media (min-resolution: 192dpi) {
-    background-image: url('/img/background/background2x.png');
-  }
-}
-
 section {
   padding: 32px 0px 10px;
 
   @include media(desktop) {
     padding: 40px 0px;
-  }
-}
-
-.section-title {
-  margin-bottom: 16px;
-  text-align: center;
-  color: #fff;
-  text-transform: capitalize;
-
-  text-shadow: -2px 0px #8650d8, 2px 0 #8650d8, 0px -2px #8650d8, 0 2px #8650d8,
-    2px 2px #8650d8, -2px -2px #8650d8, -2px 2px #8650d8, 2px -2px #8650d8;
-
-  font-size: 28px;
-  font-weight: 700;
-
-  @include media(desktop) {
-    text-align: start;
-    font-size: 64px;
-  }
-}
-.section-subtitle {
-  margin: 0 auto 45px auto;
-  text-align: center;
-  color: #fff;
-  font-size: 20px;
-  font-weight: 700;
-
-  @include media(desktop) {
-    text-transform: capitalize;
-    margin-left: 0;
-    text-align: start;
-    font-size: 40px;
   }
 }
 
