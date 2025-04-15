@@ -1,5 +1,5 @@
 .footer {
-  padding: 5px 0 20px;
+  padding: 22px 0 10px;
   font-family: Inter, sans-serif;
   font-size: 8px;
   font-weight: 400;
@@ -13,7 +13,7 @@
 }
 
 .footer .container {
-  padding: 0 8px;
+  padding: 0 10px;
 
   @include media(desktop) {
     padding: 0 25px 0 86px;
@@ -21,10 +21,10 @@
 }
 
 .footer-nav {
-  margin-bottom: 25px;
+  margin-bottom: 13px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
 
   @include media(desktop) {
     align-items: flex-start;

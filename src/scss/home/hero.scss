@@ -120,10 +120,10 @@
 
 .hero-link-googleplay {
   position: absolute;
-  bottom: 0px;
+  bottom: -15px;
   left: 100px;
 
-  padding: 6px 10px;
+  padding: 6px 12px;
   display: inline-flex;
   align-items: center;
   gap: 8px;
@@ -166,14 +166,14 @@
   align-items: start;
 
   & .small-text {
-    font-size: 8px;
+    font-size: 7px;
     font-weight: 400;
     @include media(desktop) {
       font-size: 16px;
     }
   }
   & .store-name {
-    font-size: 15px;
+    font-size: 13px;
     font-weight: 500;
     @include media(desktop) {
       font-size: 36px;
