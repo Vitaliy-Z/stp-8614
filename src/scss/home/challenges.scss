@@ -10,8 +10,8 @@
   margin: 0 auto;
   width: 320px;
   height: 960px;
-  border-radius: 10px;
-  box-shadow: #ffffffbb 0px 0px 20px 15px inset, #ffffffbb 0px 0px 20px 15px;
+
+  box-shadow: #ffffffa0 0px 0px 30px 25px inset, #ffffffa0 0px 0px 30px 25px;
 
   background-image: url('/img/challenges/bg-1@1x.png'),
     url('/img/challenges/bg-2@1x.png'), url('/img/challenges/bg-3@1x.png');
@@ -28,7 +28,6 @@
   @include media(desktop) {
     width: 1150px;
     height: 808px;
-    box-shadow: #ffffffa0 0px 0px 30px 25px inset, #ffffffa0 0px 0px 30px 25px;
 
     background-position-x: 5%, 50%, 95%;
     background-position-y: 50%;

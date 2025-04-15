@@ -22,14 +22,10 @@
   font-size: 20px;
   font-weight: 500;
 
-  text-shadow: -2px 0px #697cfa, 2px 0 #697cfa, 0px -2px #697cfa, 0 2px #697cfa,
-    2px 2px #697cfa, -2px -2px #697cfa, -2px 2px #697cfa, 2px -2px #697cfa;
+  @include text-shadow(#8650d8);
 
   @include media(desktop) {
     margin-left: 0;
     font-size: 40px;
-    text-shadow: -3px 0px #7b63e6, 3px 0 #7b63e6, 0px -3px #7b63e6,
-      0 3px #7b63e6, 3px 3px #7b63e6, -3px -3px #7b63e6, -3px 3px #7b63e6,
-      3px -3px #7b63e6;
   }
 }

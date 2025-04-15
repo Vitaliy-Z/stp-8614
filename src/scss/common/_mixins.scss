@@ -24,3 +24,11 @@ screen types:
 
   line-height: math.div(math.round($result * 100), 100);
 }
+
+@mixin text-shadow($_color) {
+  text-shadow: 0px -2px $_color, 1px -2px $_color, 2px -2px $_color,
+    2px -1px $_color, 2px 0px $_color, 2px 1px $_color, 2px 2px $_color,
+    1px 2px $_color, 0px 2px $_color, -1px 2px $_color, -2px 2px $_color,
+    -2px 1px $_color, -2px 0px $_color, -2px -1px $_color, -2px -2px $_color,
+    -1px -2px $_color;
+}

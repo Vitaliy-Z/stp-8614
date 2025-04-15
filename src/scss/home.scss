@@ -27,8 +27,7 @@ body {
   color: #fff;
   text-transform: capitalize;
 
-  text-shadow: -2px 0px #8650d8, 2px 0 #8650d8, 0px -2px #8650d8, 0 2px #8650d8,
-    2px 2px #8650d8, -2px -2px #8650d8, -2px 2px #8650d8, 2px -2px #8650d8;
+  @include text-shadow(#8650d8);
 
   font-size: 28px;
   font-weight: 700;
