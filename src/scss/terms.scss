@@ -62,7 +62,22 @@ body {
     gap: 20px;
   }
 }
-
+.main-title {
+  text-align: center;
+  font-size: 20px;
+  @include media(desktop) {
+    text-align: start;
+    font-size: 50px;
+  }
+}
+.title {
+  font-size: 16px;
+  padding-left: 12px;
+  @include media(desktop) {
+    padding-left: 0;
+    font-size: 32px;
+  }
+}
 .terms-list {
   list-style: disc;
   padding-left: 40px;
@@ -72,6 +87,13 @@ body {
 
   @include media(desktop) {
     padding-left: 65px;
+  }
+}
+
+.mob-text-n {
+  display: inline-block;
+  @include media(desktop) {
+    display: inline;
   }
 }
 
