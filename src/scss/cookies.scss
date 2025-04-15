@@ -2,4 +2,117 @@
 
 @import './common/common.scss';
 
+body {
+  font-weight: 500;
+  font-size: 10px;
+
+  background-image: url('/img/background/background-secondary1x.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  @media (min-resolution: 192dpi) {
+    background-image: url('/img/background/background-secondary2x.png');
+  }
+}
+
+.terms-header {
+  padding: 22px 0 10px 0;
+
+  @include media(desktop) {
+    padding-top: 32px;
+  }
+}
+
+.back-link {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  line-height: 1;
+
+  @include media(desktop) {
+    font-size: 32px;
+    line-height: 1;
+  }
+}
+.header-icon-back {
+  width: 8px;
+  height: 14px;
+  @include media(desktop) {
+    width: 10px;
+    height: 17px;
+  }
+}
+
+.cookies-section {
+  padding: 10px 0 20px 0;
+
+  @include media(desktop) {
+    font-size: 18px;
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  @include media(desktop) {
+    padding-left: 32px;
+    gap: 20px;
+  }
+}
+.main-title {
+  padding-left: 12px;
+  font-size: 20px;
+  @include media(desktop) {
+    font-size: 50px;
+  }
+}
+.title {
+  font-size: 16px;
+  padding-left: 12px;
+  @include media(desktop) {
+    padding-left: 0;
+    font-size: 32px;
+  }
+}
+.subtitle {
+  font-size: 12px;
+  padding-left: 12px;
+  @include media(desktop) {
+    padding-left: 0;
+    font-size: 24px;
+  }
+}
+.terms-list {
+  list-style: disc;
+  padding-left: 40px;
+  margin-bottom: 20px;
+  color: blue;
+  text-decoration: underline;
+
+  @include media(desktop) {
+    padding-left: 65px;
+  }
+}
+
+.list-text {
+  margin-top: -14px;
+  list-style: disc;
+  padding-left: 15px;
+}
+
+.mob-text-n {
+  display: inline-block;
+  @include media(desktop) {
+    display: inline;
+  }
+}
+
+.def-link {
+  color: blue;
+  text-decoration: underline;
+}
+
 @import './home/footer.scss';
