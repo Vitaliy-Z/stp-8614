@@ -3,17 +3,17 @@
   padding-bottom: 22px;
 
   @include media(desktop) {
-    padding: 60px 0 100px;
+    padding: 60px 0 50px;
   }
 }
 
 .hero-section .container {
+  position: relative;
   overflow: visible;
   text-align: center;
 
   @include media(desktop) {
-    position: relative;
-    height: 702px;
+    height: 770px;
     background-image: url('/img/hero/desktop-items1x.png'),
       url('/img/hero/desktop-mobile1x.png');
     background-repeat: no-repeat;
@@ -102,12 +102,12 @@
 
 .hero-images-wrapper {
   width: 120%;
-  height: 315px;
+  height: 343px;
   background-image: url('/img/hero/mob-items1x.png'),
     url('/img/hero/mob-mobile1x.png');
   background-repeat: no-repeat;
-  background-position: 8px 14px, 105px 80px;
-  background-size: 98%, 37%;
+  background-position: 5px 5px, 105px 65px;
+  background-size: 96%, 37%;
 
   @media (min-resolution: 192dpi) {
     background-image: url('/img/hero/mob-items2x.png'),
@@ -119,15 +119,64 @@
 }
 
 .hero-link-googleplay {
-  display: inline-block;
+  position: absolute;
+  bottom: 0px;
+  left: 100px;
+
+  padding: 6px 10px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.1;
+  color: white;
+  text-decoration: none;
+  background-color: #1a73e8;
+  border: 1px solid #a6a6a6;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
 
   @include media(desktop) {
-    position: absolute;
-    left: 130px;
-    bottom: -40px;
+    gap: 18px;
+    left: 110px;
 
-    & .hero-link-googleplay-img {
-      width: 250px;
+    padding: 10px 20px;
+  }
+}
+
+.hero-link-googleplay:hover {
+  background-color: #1669c1;
+}
+
+.hero-googleplay-icon {
+  width: 22px;
+  height: 22px;
+  background-image: url('/img/hero/playstore.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @include media(desktop) {
+    width: 50px;
+    height: 54px;
+  }
+}
+.hero-googleplay-text {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+
+  & .small-text {
+    font-size: 8px;
+    font-weight: 400;
+    @include media(desktop) {
+      font-size: 16px;
+    }
+  }
+  & .store-name {
+    font-size: 15px;
+    font-weight: 500;
+    @include media(desktop) {
+      font-size: 36px;
     }
   }
 }

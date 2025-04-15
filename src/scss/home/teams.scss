@@ -1,5 +1,6 @@
 .teams-section .section-subtitle {
   width: 230px;
+  color: #53539a;
   @include media(desktop) {
     text-transform: capitalize;
     width: 80%;
@@ -119,8 +120,13 @@
 }
 
 .teams-avatar {
+  width: 83px;
+  border-radius: 30px;
+  border: 2px solid #ddac43;
   @include media(desktop) {
     width: 248px;
+    border-radius: 0;
+    border: none;
   }
 }
 
