@@ -27,12 +27,13 @@ body {
   color: #fff;
   text-transform: capitalize;
 
-  @include text-shadow(#8650d8);
+  @include text-shadow(#7766e8);
 
   font-size: 28px;
   font-weight: 700;
 
   @include media(desktop) {
+    @include text-shadow(#8650d8);
     text-align: start;
     font-size: 64px;
   }
